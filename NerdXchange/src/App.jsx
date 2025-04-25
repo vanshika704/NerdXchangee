@@ -9,12 +9,16 @@ import Connect from "./pages/connect";
 import Messages from "./pages/messages";
 import Resources from "./pages/resources";
 import Profile from "./pages/profile";
+import Signup from "./pages/singup";
+import Login from "./pages/login";
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Page1 />} />
+      <Route path="/" element={<Signup/>} />
+      <Route path="/login" element={<Login/>} />
+        <Route path="/Page1" element={<Page1 />} />
         <Route path="/editor" element={<OnlineCodeEditor/>} />
         <Route path="/discover" element={<Explore/>}/>
         <Route path="/connect" element={<Connect/>}/>
